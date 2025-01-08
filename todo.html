@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do WebApp</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>To-Do List</h2>
+        <ul>
+            <li id="nav-home">Home</li>
+            <li id="nav-pending">Pending Tasks</li>
+            <li id="nav-completed">Completed Tasks</li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <div class="todo-container" id="todo-container">
+            <div class="todo-header" id="todo-header">
+                <h1>Home</h1>
+            </div>
+
+            <div class="todo-input-container" id="home-view">
+                <input type="text" id="todo-input" placeholder="Add a new task...">
+                <button id="add-btn">Add</button>
+            </div>
+
+            <div class="task-section hidden" id="pending-view">
+                <h2>Pending Tasks</h2>
+                <ul class="task-list" id="pending-tasks">
+                    
+                </ul>
+            </div>
+
+            <div class="task-section hidden" id="completed-view">
+                <h2>Completed Tasks</h2>
+                <ul class="task-list" id="completed-tasks">
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="todo.js"></script>
+</body>
+</html>
